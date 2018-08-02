@@ -1,0 +1,15 @@
+{
+  "name": "port",
+  "version": "1.0.0",
+  "description": "my website ",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive" 
+  },
+  "author": "Nhlalala",
+  "license": "MIT",
+  "dependencies": {
+    "i": "^0.3.6",
+    "node-sass": "^4.9.2"
+  }
+}
