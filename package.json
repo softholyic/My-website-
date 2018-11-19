@@ -10,6 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "i": "^0.3.6",
-    "node-sass": "^4.9.2"
+    "node-sass": "^4.9.2",
+    "cryptiles": ">=4.1.2",
+    "hoek": ">=4.2.1"
   }
 }
