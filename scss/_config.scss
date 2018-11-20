@@ -1,7 +1,7 @@
-$primary-color:#444;
-$secondary-color:#eece1a;
+$primary-color:#011f4b;
+$secondary-color:#ffce00;
 $show-home-image: true;
-$home-image: url(../img/back.jpg);
+$home-image: url(https://source.unsplash.com/collection/563079/1920x1080);
 $backgroud-opacity: 0.9;
 
 @mixin easeOut {
@@ -16,7 +16,7 @@ $backgroud-opacity: 0.9;
             background: $home-image;
             background-attachment: fixed;
             background-size: cover;
-
+  
             &:after {
                 content: '';
                 position: absolute;
