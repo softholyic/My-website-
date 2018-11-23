@@ -88,15 +88,23 @@ main {
         font-size: 1.5rem;
     }
     
+    
+}
+
+.skills{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 
+    'job1 job2';
+    grid-template-columns: repeat(2,1fr);
     .job-1 {
         grid-area: job1;
+        
     }
     .job-2 {
         grid-area: job2;
     }
-    .job-3 {
-        grid-area: job3;
-    }
+    
     .job {
         background: lighten($primary-color,5);
         padding: 0.5rem;

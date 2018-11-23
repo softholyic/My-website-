@@ -168,13 +168,17 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-  .about-info .job-1 {
+
+.skills {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'job1 job2';
+  grid-template-columns: repeat(2, 1fr); }
+  .skills .job-1 {
     grid-area: job1; }
-  .about-info .job-2 {
+  .skills .job-2 {
     grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
-  .about-info .job {
+  .skills .job {
     background: #012964;
     padding: 0.5rem;
     border-bottom: #ffce00 5px solid; }
