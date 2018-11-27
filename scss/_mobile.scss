@@ -3,7 +3,7 @@
 @include mediaXL {
 
     .projects {
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
     
 }
@@ -11,7 +11,10 @@
 //Desktops and laptops
 @include mediaLg {
     .projects {
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas:
+        'item item item'
+        'item';
     }
     
 }
@@ -50,7 +53,8 @@
         transform: translate3d(100%, 0, 0);
 
         .portrait {
-            background: url('../dist/img/me.png');
+            background: url('../img/me.png');
+            background-size: contain;
             width: 150px;
             height: 150px;
         }
@@ -59,10 +63,14 @@
     .about-info {
         grid-template-areas:
         'bioimage'
-        'bio'
+        'bio';
+        grid-template-columns: 1fr;
+    }
+    .skills{
+        grid-template-areas: 
         'job1'
-        'job2'
-        'job3';
+        'job2';
+        
         grid-template-columns: 1fr;
     }
     
