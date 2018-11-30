@@ -48,8 +48,8 @@ header {
 }
 
 main {
-    padding: 4rem;
-    min-height: calc(100vh-60px);
+    padding: 3rem;
+    min-height: calc(100vh);
     .icons {
         margin-top: 1rem;
         a {
@@ -80,12 +80,14 @@ main {
     .bio-image {
         grid-area: bioimage;
         margin: auto;
+        width: 100%;
         border-radius: 50%;
         border: $secondary-color 3px solid;
     }
     .bio {
         grid-area: bio;
         font-size: 1.5rem;
+        margin-bottom: 6vh;
     }
     
     
@@ -108,6 +110,7 @@ main {
     .job {
         background: lighten($primary-color,5);
         padding: 0.5rem;
+        margin-bottom: 6vh;
         border-bottom: $secondary-color 5px solid;
     }
 }
@@ -116,7 +119,7 @@ main {
 
 .projects {
     display: grid;
-    grid-gap: 0.7rem;
+    grid-gap: 7vh 2.73vw;
     grid-template-columns: repeat(2,1fr);
 
     img {
@@ -197,3 +200,8 @@ main {
 
 
 @import 'mobile'; 
+// * {
+//     background: #000 !important;
+//     color: #0f0 !important;
+//     outline: solid #f00 1px !important;
+//   }
