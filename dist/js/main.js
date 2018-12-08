@@ -11,7 +11,7 @@ const navItems=document.querySelectorAll('.nav-item');
 
 let showMenu = false;
 
-menuBtn.addEventListener('click',toggleMenu);
+//menuBtn.addEventListener('click',toggleMenu);
 
 function toggleMenu(){
     if(!showMenu){
@@ -36,3 +36,18 @@ function toggleMenu(){
     }
 
 }
+
+
+/* Shapes */
+var bm = document.getElementById('bm');
+var animItem = bodymovin.loadAnimation({
+  wrapper: bm,
+  animType: 'svg',
+  loop: true,
+  autoplay: false,
+  path: 'img/data.json'
+});
+
+animItem.addEventListener('DOMLoaded', function() {
+  animItem.play();
+});
