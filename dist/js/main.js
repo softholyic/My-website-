@@ -45,9 +45,14 @@ var animItem = bodymovin.loadAnimation({
   animType: 'svg',
   loop: true,
   autoplay: false,
-  path: 'img/data.json'
+  path: '/dist/animation/data.json' 
 });
 
 animItem.addEventListener('DOMLoaded', function() {
   animItem.play();
 });
+window.addEventListener("load", function() {
+    //animItem.destroy();
+    bm.parentNode.removeChild(bm); 
+    console.log("All resources finished loading!");
+  });
