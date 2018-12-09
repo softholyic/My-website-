@@ -11,11 +11,11 @@ const navItems=document.querySelectorAll('.nav-item');
 
 let showMenu = false;
 
-//menuBtn.addEventListener('click',toggleMenu);
+menuBtn.addEventListener('click',toggleMenu);
 
 function toggleMenu(){
     if(!showMenu){
-        menuBtn.classList.add('close');
+        menuBtn.classList.add('close'); 
         menu.classList.add('show');
         menuNav.classList.add('show');
         menuBranding.classList.add('show');
@@ -52,7 +52,7 @@ animItem.addEventListener('DOMLoaded', function() {
   animItem.play();
 });
 window.addEventListener("load", function() {
-    //animItem.destroy();
+    animItem.stop();
     bm.parentNode.removeChild(bm); 
     console.log("All resources finished loading!");
   });

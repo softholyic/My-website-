@@ -12,7 +12,7 @@ body {
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0; 
-    //font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.5;
 }
 
@@ -197,25 +197,25 @@ main {
 
 }
 
-html {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-  }
+// html {
+//     margin: 0;
+//     padding: 0;
+//     background-color: black;
+//   }
   
-  body,
-  html {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: #272727;
-  }
+//   body,
+//   html {
+//     width: 100%;
+//     height: 100%;
+//     overflow: hidden;
+//     background-color: #272727;
+//   }
   
   #bm {
     max-width: 100%;
     max-height: 100%;
-    background-color: #272727;
-    position: absolute;  
+    background-color: #011f4b;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -223,7 +223,7 @@ html {
     margin: auto;
   } 
 
-
+    
 
 @import 'mobile'; 
 // * {
