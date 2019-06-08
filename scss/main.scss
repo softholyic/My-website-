@@ -33,7 +33,7 @@ h3 {
 }
 
 a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
@@ -85,6 +85,9 @@ main {
         border: $secondary-color 3px solid;
     }
     .bio {
+        a{
+         color: $secondary-color
+        }
         grid-area: bio;
         font-size: 1.5rem;
         margin-bottom: 6vh;
