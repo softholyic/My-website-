@@ -79,8 +79,11 @@ main {
 
     .bio-image {
         grid-area: bioimage;
+        background: url('../img/download.png');
+        background-size: cover;
         margin: auto;
-        width: 100%;
+        width: 250px;
+        height: 250px;
         border-radius: 50%;
         border: $secondary-color 3px solid;
     }
