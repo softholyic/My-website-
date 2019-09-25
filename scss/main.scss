@@ -33,7 +33,7 @@ h3 {
 }
 
 a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
@@ -79,12 +79,19 @@ main {
 
     .bio-image {
         grid-area: bioimage;
+        background: url('../img/download.png');
+        background-size: cover;
         margin: auto;
-        width: 100%;
+        width: 220px;
+        height: 220px;
         border-radius: 50%;
-        border: $secondary-color 3px solid;
+        border: $secondary-color 10px solid;
+        background-position: 0% 32%;
     }
     .bio {
+        a{
+         color: $secondary-color
+        }
         grid-area: bio;
         font-size: 1.5rem;
         margin-bottom: 6vh;
@@ -112,6 +119,14 @@ main {
         padding: 0.5rem;
         margin-bottom: 6vh;
         border-bottom: $secondary-color 5px solid;
+    }
+    .rounded {
+        border: 1px solid white;
+        display: inline-flex;
+        border-radius: 20px;
+        padding: 8px 13px;
+        min-width: 18px;
+        margin: 5px 5px;
     }
 }
 
