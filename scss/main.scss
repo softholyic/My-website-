@@ -140,6 +140,7 @@ main {
     img {
         width: 100%;
         border: 3px #fff solid;
+        border-radius: 5px 5px 0 0;
 
         &:hover {
             opacity: 0.5;
@@ -147,13 +148,42 @@ main {
             @include easeOut;
         }
     }
+    .item {
+        margin-top: 10px;
+        background: lighten($primary-color,5);
+        padding-bottom: 15px;
+        border-radius: 5px;
+
+        ul {
+            padding: 0;
+            li{
+                border-bottom: 1px $secondary-color solid;
+                list-style: none;
+                list-style: none;
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .redirectButtons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    .btn-light{
+        margin: 0 5px;
+        border: 1px lighten($primary-color,5) solid;
+        border-radius: 22px;
+    }
 }
 
 
 //button style
 .btn {
     display: block;
-    padding: 0.5rem 1 rem;
+    padding: 0.5rem 1rem;
     border: 0;
     margin-bottom: 0.3rem;
 
