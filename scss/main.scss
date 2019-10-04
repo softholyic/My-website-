@@ -230,6 +230,9 @@ main {
     @extend .btn;
     background: lighten($primary-color,50);
     color: #333;
+     margin: 0 5px;
+     border: 1px lighten($primary-color,5) solid;
+     border-radius: 22px;
 
 }
 
@@ -241,6 +244,69 @@ main {
     height: 60px;
 
 }
+
+//modal
+
+
+
+.modal {
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow:hidden; 
+  background-color: rgba(0,0,0,0.4); 
+  .modal-content{
+    display:flex;
+    width:90%;
+    height: 75%;
+    margin: 8% auto;
+        
+    .gif{
+            width:80%;
+            img{
+                width: 100%;
+                height: 100%;
+                }
+    }
+    .sideBar{
+      color:white;
+      padding: 2em;
+      width:20%;
+      background: lighten($primary-color,5);
+      position:relative;
+      h4{
+          color: $secondary-color;
+      }
+      ul{
+          list-style: none;
+          padding: 0;
+          
+      }
+      a{
+          max-width: 85px;
+      }
+      .close{
+      color:$secondary-color;
+      font-size: 28px;
+      font-weight: bold;
+      position:absolute;
+      right:15px;
+      top:10px;
+        
+        &:hover,&:focus {
+                color: $primary-color;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    }
+    }
+    
+  }
+}
+
 
 // html {
 //     margin: 0;
