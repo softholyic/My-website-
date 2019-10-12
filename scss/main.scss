@@ -135,11 +135,12 @@ main {
 .projects {
     display: grid;
     grid-gap: 7vh 2.73vw;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
 
     img {
         width: 100%;
         border: 3px #fff solid;
+        border-radius: 5px 5px 0 0;
 
         &:hover {
             opacity: 0.5;
@@ -147,13 +148,42 @@ main {
             @include easeOut;
         }
     }
+    .item {
+        margin-top: 10px;
+        background: lighten($primary-color,5);
+        padding-bottom: 15px;
+        border-radius: 5px;
+
+        ul {
+            padding: 0;
+            li{
+                border-bottom: 1px $secondary-color solid;
+                list-style: none;
+                list-style: none;
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .redirectButtons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    .btn-light{
+        margin: 0 5px;
+        border: 1px lighten($primary-color,5) solid;
+        border-radius: 22px;
+    }
 }
 
 
 //button style
 .btn {
     display: block;
-    padding: 0.5rem 1 rem;
+    padding: 0.5rem 1rem;
     border: 0;
     margin-bottom: 0.3rem;
 
@@ -200,6 +230,10 @@ main {
     @extend .btn;
     background: lighten($primary-color,50);
     color: #333;
+     margin: 0 5px;
+     border: 1px lighten($primary-color,5) solid;
+     border-radius: 22px;
+     font-size: 16px;
 
 }
 
@@ -211,6 +245,70 @@ main {
     height: 60px;
 
 }
+
+//modal
+
+
+
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow:hidden; 
+  background-color: rgba(0,0,0,0.4); 
+  .modal-content{
+    display:flex;
+    width:90%;
+    height: 75%;
+    margin: 8% auto;
+        
+    .gif{
+            width:80%;
+            img{
+                width: 100%;
+                height: 100%;
+                }
+    }
+    .sideBar{
+      color:white;
+      padding: 2em;
+      width:20%;
+      background: lighten($primary-color,5);
+      position:relative;
+      h4{
+          color: $secondary-color;
+      }
+      ul{
+          list-style: none;
+          padding: 0;
+          
+      }
+      a{
+          max-width: 85px;
+      }
+      .close{
+      color:$secondary-color;
+      font-size: 28px;
+      font-weight: bold;
+      position:absolute;
+      right:15px;
+      top:10px;
+        
+        &:hover,&:focus {
+                color: $primary-color;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    }
+    }
+    
+  }
+}
+
 
 // html {
 //     margin: 0;
