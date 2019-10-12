@@ -135,7 +135,7 @@ main {
 .projects {
     display: grid;
     grid-gap: 7vh 2.73vw;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
 
     img {
         width: 100%;
@@ -233,6 +233,7 @@ main {
      margin: 0 5px;
      border: 1px lighten($primary-color,5) solid;
      border-radius: 22px;
+     font-size: 16px;
 
 }
 
@@ -251,6 +252,7 @@ main {
 
 .modal {
   position: fixed;
+  display: none;
   z-index: 1; 
   left: 0;
   top: 0;
