@@ -5,7 +5,7 @@
         display: none;
     }
     .projects {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     .about-info img{
         max-width: 70%;
@@ -22,7 +22,7 @@
         }
     }
     .projects {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
             'item item item'
             'item';
